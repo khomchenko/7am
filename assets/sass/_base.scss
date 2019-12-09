@@ -1,0 +1,81 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content }; 
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content }; 
+    }
+}
+
+:root {
+    --color-primary: #2F80ED;
+    --color-primary-background: #EAF4F9;
+
+    --color-secondary: #57BCF1;
+    --color-secondary-hover: #2DA9EA;
+    --color-secondary-focus: #0088CE;
+
+    --color-white: #FEFEFE;
+    --color-black: #1A1A1A;
+    --color-grey: #828282;
+    --color-grey-light: #F2F2F2;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Circe', sans-serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.6rem;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    min-height: 100vh;
+    position: relative;
+
+    @include respond(phone) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.container {
+    max-width: 117rem;
+    width: 100%;
+    margin: 0 auto;
+
+    @include respond(tab-land) {
+        padding: 0 2rem;
+    }
+}
