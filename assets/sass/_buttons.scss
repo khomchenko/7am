@@ -1,0 +1,20 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+    background-color: transparent;
+    color: #C76753;
+    border: none;
+    outline: none;
+
+    &-tablink {
+        margin-right: 10rem;
+
+        &.active {
+            border-bottom: 2px solid #FA9E93;
+        }
+    }
+}

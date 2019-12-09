@@ -56,9 +56,9 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Circe', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: normal;
-    line-height: 2.6rem;
+    line-height: 2.7rem;
     color: var(--color-black);
     background-color: var(--color-white);
     min-height: 100vh;
@@ -71,9 +71,11 @@ body {
 }
 
 .container {
-    max-width: 117rem;
+    max-width: 124rem;
     width: 100%;
     margin: 0 auto;
+    // border-left: 1px solid red;
+    // border-right: 1px solid red;
 
     @include respond(tab-land) {
         padding: 0 2rem;

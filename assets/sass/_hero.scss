@@ -1,0 +1,20 @@
+.hero {
+    background-color: #FA9E93;
+    margin-bottom: 14.7rem;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        padding-top: 26.6rem;
+        padding-bottom: 18.7rem;
+    }
+    
+    &__title {
+        font-size: 4.2rem;
+        font-weight: normal;
+        line-height: 5.2rem;
+        color: var(--color-white);
+        max-width: 91.5rem;
+        width: 100%;
+    }
+}
