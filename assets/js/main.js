@@ -17,3 +17,7 @@ function openMenu(evt, menuName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+$('.first-parallax').parallax({imageSrc: './assets/images/parallax_photo.png'});
+$('.second-parallax').parallax({imageSrc: './assets/images/parallax_photo-2.png'});
+$('.third-parallax').parallax({imageSrc: './assets/images/parallax_photo-3.png'});

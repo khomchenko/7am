@@ -347,6 +347,20 @@ body {
   max-width: 100%;
   height: 74.7rem; }
 
+.first-parallax,
+.second-parallax,
+.third-parallax {
+  background: transparent; }
+
+.first-parallax {
+  height: 74.7rem; }
+
+.second-parallax {
+  height: 57rem; }
+
+.third-parallax {
+  height: 78rem; }
+
 .collage {
   margin-bottom: 10.3rem; }
   .collage__inner {
@@ -354,4 +368,4 @@ body {
     flex-direction: column; }
   .collage__image {
     max-width: 100%;
-    height: 64.6rem; }
+    height: 51rem; }
