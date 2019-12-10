@@ -206,7 +206,8 @@ body {
   background-color: transparent;
   color: #C76753;
   border: none;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
   .btn-tablink {
     margin-right: 10rem; }
     .btn-tablink.active {
