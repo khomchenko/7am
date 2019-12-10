@@ -207,10 +207,6 @@ body {
     .btn-tablink.active {
       border-bottom: 2px solid #FA9E93; }
 
-@media only screen and (max-width: 37.5em) {
-  .header {
-    background: blue; } }
-
 .header__inner {
   display: flex;
   align-items: center;
