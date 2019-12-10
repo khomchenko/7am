@@ -1,7 +1,4 @@
 .header {
-    @include respond(phone) {
-        background: blue;
-    }
 
     &__inner {
         display: flex;
