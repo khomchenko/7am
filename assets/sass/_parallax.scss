@@ -19,12 +19,24 @@
 
 .first-parallax {
     height: 74.7rem;
+
+    @include respond(tab-port) {
+        height: 39rem;
+    }
 }
 
 .second-parallax {
     height: 57rem;
+
+    @include respond(tab-port) {
+        height: 45rem;
+    }
 }
 
 .third-parallax {
     height: 78rem;
+
+    @include respond(tab-port) {
+        height: 55rem;
+    }
 }

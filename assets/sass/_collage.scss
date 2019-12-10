@@ -1,6 +1,10 @@
 .collage {
     margin-bottom: 10.3rem;
 
+    @include respond(tab-land) {
+        margin-bottom: 5rem;
+    }
+
     &__inner {
         display: flex;
         flex-direction: column;
@@ -9,5 +13,9 @@
     &__image {
         max-width: 100%;
         height: 51rem;
+
+        @include respond(tab-land) {
+            height: unset;
+        }
     }
 }

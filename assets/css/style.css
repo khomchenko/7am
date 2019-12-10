@@ -202,23 +202,65 @@ body {
   outline: none;
   cursor: pointer; }
   .btn-tablink {
-    margin-right: 10rem; }
+    margin-right: 10rem;
+    border-bottom: 2px solid transparent; }
     .btn-tablink.active {
       border-bottom: 2px solid #FA9E93; }
+
+@media only screen and (max-width: 37.5em) {
+  .header {
+    background: blue; } }
 
 .header__inner {
   display: flex;
   align-items: center;
   padding-top: 3.8rem;
   padding-bottom: 2.9rem; }
+  @media only screen and (max-width: 56.25em) {
+    .header__inner {
+      flex-wrap: wrap; } }
+  @media only screen and (max-width: 37.5em) {
+    .header__inner {
+      justify-content: center; } }
   .header__inner .time {
     margin-left: auto;
     margin-right: 3.4rem; }
+    @media only screen and (max-width: 75em) {
+      .header__inner .time {
+        margin-left: 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .header__inner .time {
+        order: 3;
+        margin: 5px 0;
+        margin-right: 3rem; } }
   .header__inner .address {
     margin-right: 27.5rem; }
+    @media only screen and (max-width: 75em) {
+      .header__inner .address {
+        margin-right: 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .header__inner .address {
+        order: 2;
+        width: 50%;
+        text-align: center;
+        margin: 5px 0; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__inner .address {
+        width: 100%; } }
   .header__inner .phone {
     text-decoration: none;
     color: inherit; }
+    @media only screen and (max-width: 56.25em) {
+      .header__inner .phone {
+        order: 4;
+        margin: 5px 0; } }
+  @media only screen and (max-width: 75em) {
+    .header__inner .logo {
+      margin: 0 auto; } }
+  @media only screen and (max-width: 56.25em) {
+    .header__inner .logo {
+      order: 1;
+      width: 60%; } }
 
 .footer {
   background-color: #E3B04B; }
@@ -238,6 +280,10 @@ body {
     flex-direction: column;
     padding-top: 26.6rem;
     padding-bottom: 18.7rem; }
+    @media only screen and (max-width: 56.25em) {
+      .hero__inner {
+        padding-top: 10rem;
+        padding-bottom: 8rem; } }
   .hero__title {
     font-size: 4.2rem;
     font-weight: normal;
@@ -245,6 +291,10 @@ body {
     color: var(--color-white);
     max-width: 91.5rem;
     width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .hero__title {
+        font-size: 3.2rem;
+        line-height: 5.5rem; } }
 
 .contacts {
   position: relative;
@@ -254,11 +304,18 @@ body {
     margin-bottom: 5rem; }
   .contacts__inner {
     display: flex; }
+    @media only screen and (max-width: 75em) {
+      .contacts__inner {
+        flex-direction: column; } }
   .contacts__aside {
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
     margin-bottom: 28rem; }
+    @media only screen and (max-width: 75em) {
+      .contacts__aside {
+        margin-top: 0;
+        margin-bottom: 5rem; } }
     .contacts__aside .title {
       font-size: 3rem;
       font-weight: bold;
@@ -286,9 +343,17 @@ body {
     flex-direction: column;
     position: absolute;
     right: 0; }
+    @media only screen and (max-width: 75em) {
+      .contacts__map {
+        position: unset;
+        right: unset; } }
     .contacts__map iframe {
       width: 72.5rem;
       height: 66.5rem; }
+      @media only screen and (max-width: 75em) {
+        .contacts__map iframe {
+          width: 100%;
+          height: 30rem; } }
 
 .menu {
   margin-bottom: 9.9rem;
@@ -301,6 +366,18 @@ body {
       justify-content: center;
       padding-top: 2.1rem;
       padding-bottom: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .menu__inner .tab-btns {
+          flex-wrap: wrap;
+          padding-bottom: 4.5rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .menu__inner .tab-btns button {
+          width: 50%;
+          margin-right: 0;
+          margin-bottom: 1rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .menu__inner .tab-btns button {
+          width: 100%; } }
       .menu__inner .tab-btns button:last-child {
         margin-right: 0; }
     .menu__inner .tabcontent {
@@ -314,6 +391,9 @@ body {
         max-width: 54rem;
         width: 100%;
         margin-bottom: 5rem; }
+        @media only screen and (max-width: 75em) {
+          .menu__inner .tabcontent__item {
+            max-width: unset; } }
       .menu__inner .tabcontent__price {
         font-size: 2.4rem;
         font-weight: normal;
@@ -351,18 +431,33 @@ body {
 
 .first-parallax {
   height: 74.7rem; }
+  @media only screen and (max-width: 56.25em) {
+    .first-parallax {
+      height: 39rem; } }
 
 .second-parallax {
   height: 57rem; }
+  @media only screen and (max-width: 56.25em) {
+    .second-parallax {
+      height: 45rem; } }
 
 .third-parallax {
   height: 78rem; }
+  @media only screen and (max-width: 56.25em) {
+    .third-parallax {
+      height: 55rem; } }
 
 .collage {
   margin-bottom: 10.3rem; }
+  @media only screen and (max-width: 75em) {
+    .collage {
+      margin-bottom: 5rem; } }
   .collage__inner {
     display: flex;
     flex-direction: column; }
   .collage__image {
     max-width: 100%;
     height: 51rem; }
+    @media only screen and (max-width: 75em) {
+      .collage__image {
+        height: unset; } }
