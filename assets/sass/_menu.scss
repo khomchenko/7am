@@ -8,8 +8,16 @@
 
         .tab-btns {
             display: flex;
+            justify-content: center;
             padding-top: 2.1rem;
             padding-bottom: 6rem;
+
+            button {
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
         }
 
         .tabcontent {
