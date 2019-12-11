@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>7AM</title>
 
+    <link rel="stylesheet" href="./assets/css/parallax-vanilla.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -31,9 +32,20 @@
 
     <section class="parallax">
         <div class="parallax__inner">
-            <div class="first-parallax" data-parallax="scroll" data-image-src="./assets/images/parallax_photo.png"></div>
-            <div class="second-parallax" data-parallax="scroll" data-image-src="./assets/images/parallax_photo-2.png"></div>
-            <div class="third-parallax" data-parallax="scroll" data-image-src="./assets/images/parallax_photo-3.png"></div>
+            <div class="first-parallax" data-parallax="scroll" data-image-src="./assets/images/parallax-photo.jpg"></div>
+            <div class="second-parallax" data-parallax="scroll" data-image-src="./assets/images/parallax-photo-2.jpg"></div>
+            <div class="third-parallax" data-parallax="scroll" data-image-src="./assets/images/parallax-photo-3.jpg"></div>
+        </div>
+        <div class="parallax__mobile">
+            <div class="pv-container" pv-height="747px">
+                <div class="pv-block" pv-speed=1.0 pv-mediapath=./assets/images/parallax-photo.jpg></div>
+            </div>
+            <div class="pv-container" pv-height="570px">
+                <div class="pv-block" pv-speed=1.0 pv-mediapath=./assets/images/parallax-photo-2.jpg></div>
+            </div>     
+            <div class="pv-container" pv-height="780px">
+                <div class="pv-block" pv-speed=1.0 pv-mediapath=./assets/images/parallax-photo-3.jpg></div>
+            </div> 
         </div>
     </section>
 
@@ -144,7 +156,7 @@
 
     <section class="collage">
         <div class="collage__inner">
-            <img src="./assets/images/collage.png" alt="Collage" class="collage__image">
+            <img src="./assets/images/collage.jpg" alt="Collage" class="collage__image">
         </div>
     </section>
 
@@ -185,6 +197,21 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./assets/js/parallax-vanilla.js"></script>
+	<script type="text/javascript">
+		const demoSettings = {
+			container: {
+                class: 'pv-container',
+			},
+			block: {
+				class: 'pv-block',
+				speed: -1,
+				mediatype: 'image',
+			},
+		}
+
+		pv.init(demoSettings)
+    </script>
     <script src="./assets/js/parallax.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

@@ -2,6 +2,10 @@
     background-color: #FA9E93;
     margin-bottom: 14.7rem;
 
+    @include respond(tab-land) {
+        margin-bottom: 0;
+    }
+
     &__inner {
         display: flex;
         flex-direction: column;
