@@ -23,16 +23,16 @@
         height: 74.7rem;
     }
 
-    @include respond(tab-land) {
-        .pv-container {
-            height: 250px !important;
-        }
+    // @include respond(tab-land) {
+    //     .pv-container {
+    //         height: 250px !important;
+    //     }
     
-        .pv-block {
-            padding-bottom: 1265px !important;
-            margin-top: -1010px !important;
-        }
-    }
+    //     .pv-block {
+    //         padding-bottom: 1265px !important;
+    //         margin-top: -1010px !important;
+    //     }
+    // }
 }
 
 .first-parallax,
